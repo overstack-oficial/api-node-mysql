@@ -9,9 +9,9 @@ class Database {
     }
 
     mysqlDataBase(){
-        this.sequelize = new Sequelize('overstack', 'root', '123456', {
-            host: 'localhost',
-            // port: '41890',
+        this.sequelize = new Sequelize('testeoverstack', 'kaioadmin', '123456ka', {
+            host: 'mysql743.umbler.com',
+            port: '41890',
             dialect: 'mysql'
         });
 
@@ -34,7 +34,6 @@ class Database {
             console.log(`Error: ${error}`);
         })
     }
-
 }
 
 module.exports = new Database();
